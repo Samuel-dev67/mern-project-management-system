@@ -1,5 +1,7 @@
+const dns = require('dns');
 const mongoose = require('mongoose');
 
+dns.setServers(['8.8.8.8', '1.1.1.1']);
 /**
  * Establishes connection to MongoDB Atlas using the connection string
  * provided in environment variables. The process exits with a failure
